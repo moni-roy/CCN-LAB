@@ -1,0 +1,24 @@
+Switch>en
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#vlan 99
+Switch(config-vlan)#name mgt&native
+Switch(config-vlan)#exit
+Switch(config)#vlan 10
+Switch(config-vlan)#name lab-1
+Switch(config-vlan)#exit
+Switch(config)#vlan 20
+Switch(config-vlan)#name lab-2
+Switch(config-vlan)#exit
+Switch(config)#vlan 30
+Switch(config-vlan)#name lab-3
+Switch(config-vlan)#exit
+Switch(config)#eixt
+                ^
+% Invalid input detected at '^' marker.
+	
+Switch(config)#exit
+Switch#
+%SYS-5-CONFIG_I: Configured from console by console
+
+Switch#
